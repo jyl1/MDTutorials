@@ -1,3 +1,5 @@
+# NOTE 1: master --> main hopefully I didn't break things
+
 # Starting from scratch
 git init
 # For ssh (RSA key)
@@ -7,13 +9,14 @@ git remote add origin https://github.com/jyl1/MDTutorials.git
 # If there was a typo in the previous step...
 git remote remove origin
 # Push the first time
-git push origin master
+git push origin main
 
 # Starting from existing project
-git clone --branch master git@github.com:jyl1/MDTutorials.git
+git clone --branch branchname git@github.com:jyl1/MDTutorials.git
 
 # Update your version
-git pull origin master
+git pull
+git pull origin branchname
 
 # For making changes
 # Check: did you pull first???
@@ -23,7 +26,9 @@ git commit -m "message"
 # Alternatively, if you want a longer message
 git commit
 # Push!
-git push -u origin master
+git push
+# for a specific brnach
+git push -u origin branchname
 
 # Large files especially > 100 MB
 # https://git-lfs.github.com/
