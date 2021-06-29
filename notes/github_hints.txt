@@ -1,0 +1,30 @@
+# Starting from scratch
+git init
+# For ssh (RSA key)
+git remote add origin git@github.com:jyl1/MDTutorials.git
+# For login with username and password
+git remote add origin https://github.com/jyl1/MDTutorials.git
+# If there was a typo in the previous step...
+git remote remove origin
+# Push the first time
+git push origin master
+
+# Starting from existing project
+git clone --branch master git@github.com:jyl1/MDTutorials.git
+
+# Update your version
+git pull origin master
+
+# For making changes
+# Check: did you pull first???
+git status
+git add .
+git commit -m "message"
+# Alternatively, if you want a longer message
+git commit
+# Push!
+git push -u origin master
+
+# Large files especially > 100 MB
+# https://git-lfs.github.com/
+git lfs track "*.dcd"
