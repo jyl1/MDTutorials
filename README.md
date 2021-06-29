@@ -7,4 +7,6 @@ Hopefully, this will eventually become a collection of tutorials (mostly found o
 Data is from MDAnalysis
 - Adk equilibrium
 - Adk DIMS, first 10 trajectories only, out of a total of 200
+
+Some data is ours too
 - Coronavirus S1hinge region equilibrium: this is 8.1GB. 
